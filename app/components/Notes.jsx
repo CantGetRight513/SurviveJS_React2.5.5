@@ -1,12 +1,16 @@
-import React from 'react';
+import React from 'react';  // Required to use more intuitive JSX syntax
+import uuid from 'uuid';  // Required to generate unique ids
 
 const notes = [
   {
-    id: '4e81fc6e-bfb6-419b-93e5-0242fb6f3f6a',
+    //! id: '4e81fc6e-bfb6-419b-93e5-0242fb6f3f6a',
+	id: uuid.v4(),
     task: 'Learn React'
   },
   {
-    id: '11bbffc8-5891-4b45-b9ea-5c99aadf870f',
+    //! id: '11bbffc8-5891-4b45-b9ea-5c99aadf870f',
+	
+	id: uuid.v4(),  // Generates unique ids similar to the previous hardcoded ones
     task: 'Do laundry'
   }
 ];
